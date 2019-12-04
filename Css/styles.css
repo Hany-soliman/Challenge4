@@ -213,6 +213,10 @@ a:hover {
   .feat-img {
     padding: 0;
   }
+
+  .social-links{
+    text-align: center;
+  }
 }
 
 /* To keep the Navbar From breaking */
