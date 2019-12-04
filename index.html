@@ -1,65 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap" rel="stylesheet">
-<link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-<title>Frontend Mentor | Huddle landing page with single introductory section</title>
-<link rel="stylesheet" href="style.css" />
-<script
-      type="module"
-      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
-    ></script>
-<script
-      nomodule=""
-      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
-    ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js" data-mutate-approach="sync"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
 </head>
+
 <body>
-<div class="container">
-  <header>
-    <div class="logo"> <img src="images/logo.svg" alt="Huddle" class="head" /> </div>
-  </header>
-  <section>
-    <div class="landing">
-      <div class="fig"> <img
-              src="images/illustration-mockups.svg"
-              alt="mocup"
-              class="mainfig"
-            /> </div>
+
+  <!-- Title Section -->
+
+  <section id="title" class="img-back">
+
+    <div class="container-fluid">
+
+      <!-- Navbar -->
+
+      <nav class="navbar">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Huddle"></a>
+        <button type="button" name="button" class="btn ml-auto nav-btn">Try It Free</button>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+
+        <div id="intro" class="col-lg-6">
+
+          <h1 class="big-heading">Build The Community Your Fans Will Love</h1>
+
+          <p class="top-para">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+            Create connections with your users as you engage in genuine discussion. </p>
+
+          <button id="title-btn" type="button" name="button" class="btn ml-auto body-btn">Get Started For Free</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="primary-img" src="images\illustration-mockups.svg" alt="Illustration">
+        </div>
+
+      </div>
+
     </div>
-    <div class="main">
-      <h1>Build The Community Your Fans Will Love</h1>
-      <p> Huddle re-imagines the way we build communities. You have a voice,
-        but so does your audience. Create connections with your users as you
-        engage in genuine discussion. </p>
-      <button>Register</button>
-    </div>
+
   </section>
-  <footer>
-    <div class="flex social_media"> <a
-            href="https://www.linkedin.com/in/hany-soliman-30388b143/"
-            target="_blank"
-            >
-      <ion-icon name="logo-linkedin"></ion-icon
-          >
-      </a> <a href="https://github.com/Hany-soliman" target="_blank"
-            >
-      <ion-icon name="logo-github"></ion-icon
-          >
-      </a> <a href="">
-      <ion-icon name="logo-instagram"></ion-icon>
-      </a> </div>
-    <p class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="mailto:hany.essam1993@gmail.com">Hany Soliman</a>. </p>
+
+  <!-- Features Section -->
+
+  <section id="features" class="white-back">
+    <div class="container-fluid">
+
+
+
+      <div class="row feature">
+
+        <div class="col-lg-6 col-md-6 order-lg-12 order-md-12">
+          <img class="feat-img" src="images\illustration-grow-together.svg" alt="Grow image">
+        </div>
+
+        <div class="col-lg-6 col-md-6 feat-container order-lg-1 order-md-1">
+          <h3 class="feat-header">Grow Together</h3>
+          <p class="feat-para">Generate meaningful discussions with your audience and build a strong, loyal community.
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+        </div>
+
+      </div>
+
+      <div class="row feature">
+
+        <div class="col-lg-6 col-md-6">
+          <img class="feat-img" src="images\illustration-flowing-conversation.svg" alt="Flow image">
+        </div>
+        <div class="col-lg-6 col-md-6 feat-container">
+          <h3 class="feat-header">Flowing Conversations</h3>
+          <p class="feat-para">You wouldn't paginate a conversation in real life, so why do it online? Our threads
+            have just-in-time loading for a more natural flow.</p>
+        </div>
+
+      </div>
+
+      <div class="row feature">
+
+        <div class="col-lg-6 col-md-6 order-lg-12 order-md-12">
+          <img class="feat-img" src="images\illustration-your-users.svg" alt="Illustration image">
+        </div>
+
+        <div class="col-lg-6 col-md-6 feat-container order-lg-1 order-md-1">
+          <h3 class="feat-header">Your Users</h3>
+          <p class="feat-para">It takes no time at all to integrate Huddle with your app's authentication solution.
+            This means, once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+
+
+
+      </div>
+
+  </section>
+
+  </div>
+
+  <!-- CTA -->
+
+  <section id="cta" class="white-back">
+
+    <div class="card text-center custom">
+      <div class="card-body">
+        <h2 class="feat-header card-title">Ready To Build Your Community?</h2>
+        <button type="button" name="button" class="btn ml-auto body-btn">Get Started For Free</button>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer id="footer" class="colored-back">
+
+    <div class="container-fluid">
+
+      <nav class="navbar bottom-nav">
+        <a class="navbar-brand" href="#"><img src="images/logo - bottom.svg" alt="Huddle" class="footer-logo"></a>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-5 info-col">
+          <dl class="row  no-gutters">
+            <dt class="col-1"><img src="images\icon-location.svg" alt="Location" class="footer-icon"></dt>
+            <dd class="col-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua</dd>
+          </dl>
+          <dl class="row  no-gutters">
+            <dt class="col-1"><img src="images\icon-phone.svg" alt="Phone" class="footer-icon"></dt>
+            <dd class="col-11">+1-543-123-4567</dd>
+          </dl>
+          <dl class="row  no-gutters">
+            <dt class="col-1"><img src="images\icon-email.svg" alt="Email" class="footer-icon"></dt>
+            <dd class="col-11">example@huddle.com</dd>
+          </dl>
+        </div>
+
+        <div class="col-lg-2">
+
+          <ul>
+            <li>About Us</li>
+            <li>What We Do</li>
+            <li>FAQ</li>
+          </ul>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <ul>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+
+        </div>
+
+
+        <div class="col-lg-3">
+
+
+          <div class="social-links">
+            <a class="footer-link" href="www.facebook.com" target="_blank"><span class="fa-stack">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fas fab fa-facebook-f fa-stack-1x"></i>
+              </span></a>
+
+            <a class="footer-link" href="www.twitter.com" target="_blank"><span class="fa-stack">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fas fab fa-twitter fa-stack-1x"></i>
+              </span></a>
+
+            <a class="footer-link" href="www.instagram.com" target="_blank"><span class="fa-stack">
+                <i class="far fa-circle fa-stack-2x"></i>
+                <i class="fas fab fa-instagram fa-stack-1x"></i>
+              </span></a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-right">
+        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      </div>
+      <div class="footer-attribution">
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Hany Soliman</a>.
+        </p>
+      </div>
+    </div>
   </footer>
-</div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
